@@ -10,6 +10,7 @@ function App() {
   const [user,setUser] = useState(true)
 
   return (
+    
     <NavigationContainer>
           {
         user ? <AppNavigation/> : <AuthNavigation/> 
