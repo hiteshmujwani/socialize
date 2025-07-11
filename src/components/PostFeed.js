@@ -8,7 +8,7 @@ const PostFeed = () => {
     <View className="p-2 mt-3">
       {/* Header */}
       <View>
-        <Text className="font-bold">Recently Post</Text>
+        <Text className="font-medium text-2xl">Recently Post</Text>
       </View>
     <View>
         <PostCard/>

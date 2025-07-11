@@ -37,7 +37,7 @@ const StoryList = () => {
   return (
     <View>
         <View className='flex p-2 gap-2'>
-            <Text className='font-bold'>Stories</Text>
+            <Text className='font-medium text-2xl'>Status</Text>
             <View className='flex flex-row'>
                 
                 <FlatList

@@ -7,7 +7,7 @@ import PostFeed from '../components/PostFeed';
 
 const HomeScreen = () => {
   return (
-    <ScrollView>
+    <ScrollView className=''>
      <View>
       <Header/>
       <StoryList/>
