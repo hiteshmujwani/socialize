@@ -19,15 +19,15 @@ const StoryList = () => {
     const YourStory = () =>{
        return(
         <View>
-            <TouchableOpacity className='h-24 w-20 rounded-xl overflow-hidden bg-white flex justify-center items-center gap-3'>
-                            <View className=' h-14 w-14 rounded-full  relative flex flex-row justify-center'>
+            <TouchableOpacity className='h-28 w-24 rounded-xl overflow-hidden bg-white flex justify-center items-center gap-3 mr-[6px] '>
+                            <View className=' h-16 w-16 rounded-full  relative flex flex-row justify-center'>
                             <Image source={Avtar} className='h-full w-full border border-white rounded-full'/>
-                            <View className='bg-mint p-1 rounded-full absolute -bottom-2 border border-white'>
+                            <View className='bg-mint p-1 rounded-full absolute -bottom-3 border border-white'>
                             <AntIcon name="plus" size={12} color="black"/>
                             </View>
                             </View>
                             
-                            <Text className='text-xs font-medium'>Your Story</Text>
+                            <Text className='text-sm font-medium'>Your Story</Text>
                            
                 </TouchableOpacity>
         </View>
@@ -36,8 +36,8 @@ const StoryList = () => {
 
   return (
     <View>
-        <View className='flex p-2 gap-2'>
-            <Text className='font-medium text-2xl'>Status</Text>
+        <View className='flex pl-2 pt-2 gap-2'>
+            <Text className='font-bold text-xl'>Stories</Text>
             <View className='flex flex-row'>
                 
                 <FlatList
@@ -47,7 +47,7 @@ const StoryList = () => {
                     showsHorizontalScrollIndicator={false}
                     keyExtractor={(item) => item.id}
                     ListHeaderComponent={<YourStory/>}
-                    contentContainerStyle={{gap:6}}
+                    
                     renderItem={({ item }) => (
                     <Story/>
                     )}/>
